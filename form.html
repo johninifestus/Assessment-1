@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirror Form</title>
+</head>
+<body>
+    <header>
+        <a>
+            <img src="assets/AltSchool-Africa-Logo.svg" alt="AltSchool Africa Logo">
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="form.html">Sign in / Sign up</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <h1>Africa's Best Innovative Online School</h1>
+            <p>
+                Our programmes are designed to adapt to your time, goals, and resources, empowering you to learn on your own terms
+            </p>
+            <figure>
+                <img src="assets/asics-6.svg" alt="ASIC Logo">
+                <figcaption>
+                    Accredited by ASIC (Accreditation Service for International Schools, Colleges, and Universities)
+                </figcaption>
+            </figure>
+        </section>
+
+        <details name="auth" id="sign-up" open>
+            <summary>Sign up</summary>
+
+             <section class="sign_up_form">
+            <h1>Sign up</h1>
+            <p>Create an account to get started on your learning journey</p>
+            <p role="note">
+            <span aria-hidden="true">⚠</span>
+            <strong>Important:</strong> Your name will appear on your
+          certificate exactly as entered
+            </p>
+            <form action="">
+                <label for="signup-email">Email</label><br>
+                <input type="email" id="signup-email" name="email" placeholder="john.doe@example.com"autocomplete="email" required>
+            </form>
+        </section>
+
+        <hr>
+
+        <p>
+            <small>OR</small>
+        </p>
+
+        <form action="">
+            <button type="submit">Login with Google</button>
+        </form>
+        </details>
+
+        <details name="auth" id="sign-in">
+            <summary>Sign in</summary>
+
+            <section class="sign_in_form">
+                <h2 id="signin-heading">Sign in</h2>
+            <p>
+                Enter your email address and password to securely log in to AltSchool Student Portal
+            </p>
+ 
+            <form action="/dashboard" method="post">
+                <label for="signin-email">Email</label><br>
+                <input type="email" id="signin-email" name="email" autocomplete="email" required>
+          
+                <label for="signin-password">Password</label><br>
+                <input type="password" id="signin-password" name="password" autocomplete="current-password" required>
+                <button type="button" aria-label="Show password">👁</button>
+                <button type="submit">Proceed to Dashboard &rarr;</button>
+            </form>
+
+             <p>
+          Forgot your password? <a href="/reset-password">Reset Now!</a>
+            </p>
+ 
+            <hr>
+            <p><small>OR</small></p>
+ 
+            <form action="/auth/google" method="get">
+                <button type="submit">Login with Google</button>
+            </form>
+      </section>
+        </details>
+    </main>
+
+    <footer>
+        <address>
+            FCT, Abuja, Nigeria.
+            <a href="mailto:festusjohn202@gmail.com">festusjohn202@gmail.com</a>
+        </address>
+
+        <p><small>&copy; 2026 John Festus. All rights reserved.</small></p>
+
+    </footer>
+</body>
+</html>
